@@ -1,6 +1,6 @@
 exercice_and_repetition = {
-    "Pull ups": 0,
-    "Push ups": 0,
+    "Pull ups": [], # Les [] = initiation d'une liste vide
+    "Push ups": [],
 }
 for exercice, rep in exercice_and_repetition.items():
     print(f"-----{exercice}-----")
@@ -11,7 +11,9 @@ for exercice, rep in exercice_and_repetition.items():
         if rep == 0:
             fin_de_seance = True
         else:
-            exercice_and_repetition[exercice] += rep # C'est a = a + rep en gros
+            exercice_and_repetition[exercice].append(rep) # append
             serie += 1
+
+
 
 print(exercice_and_repetition)
