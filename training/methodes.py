@@ -14,4 +14,4 @@ y = {
 for reponse, chiffre in y.items():
     print(chiffre, reponse, chiffre)
 
-    #
+# .key ?

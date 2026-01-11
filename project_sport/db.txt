@@ -1,0 +1,20 @@
+# l'idée, c'est d'avoir ça
+id (Ticket unique),date_seance,exercice (Texte),repetitions (Entier)
+1,2026-01-11,Pull ups,10
+2,2026-01-11,Pull ups,8
+3,2026-01-11,Push ups,20
+
+
+# Connexion à l'interpreteur de la base de donnée
+sudo -u postgres psql -d musculation_db
+
+# La commande de création
+CREATE TABLE historiques (
+    id SERIAL PRIMARY KEY, # numéro unique à chaque ajout (id1, id2...)
+    date_seance DATE NOT NULL, # date
+    exercice VARCHAR(50) NOT NULL, # VARCHAR(50) c'est 50 caractères maximum pour les exercices
+    repetitions INTEGER NOT NULL # nombre entier
+);
+
+# Traducteur python -> sql = psycopg2
+
