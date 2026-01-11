@@ -1,0 +1,1 @@
+# "Dans le dictionnaire D, à la clé K, je mets la valeur V", on écrit : dictionnaire[cle] = valeur
